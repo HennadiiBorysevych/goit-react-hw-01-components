@@ -1,13 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
-
-const randomColor = () => {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
-  return `rgb(${r},${g},${b})`;
-};
-
+import { randomColor } from 'utils/randomColor.js';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics}>
